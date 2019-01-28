@@ -1,8 +1,23 @@
 package main
 
+import (
+	"fmt"
+	"math/rand"
+)
+
 type tree struct {
 	value int
 	left, right *tree
+}
+
+
+func main() {
+	data := make([]int, 10)
+	for i := range data {
+		data[i] = rand.Int() % 50
+	}
+	sort(data)
+	fmt.Println(data)
 }
 
 
