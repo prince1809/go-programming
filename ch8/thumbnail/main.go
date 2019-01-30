@@ -1,0 +1,5 @@
+package thumbnail
+
+func main()  {
+	
+}
